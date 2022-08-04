@@ -3,3 +3,5 @@ Extended abstracts should be written according to the structured abstract's unde
 
 ## Formatting
 The extended abstract of the full paper shall be written with **Times New Roman font, single line spacing, and 11 font size**. Extended abstracts can contain figures, tables, formulations, or images. Page margins are formed regarding the A4 page size and are **1 inch wide from the right, left, top and bottom.** Extended abstracts should not exceed 4 pages, including the references.  
+
+Submit your extended abstract HERE
