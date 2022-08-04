@@ -15,7 +15,7 @@ export default defineNuxtConfig({
         analyze: true
     },
     googleFonts: {
-        workSans: true,
+        'Work+Sans': true,
         display: 'swap'
     }
 })
