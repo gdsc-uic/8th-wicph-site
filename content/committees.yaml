@@ -1,0 +1,34 @@
+- committee: Organizing Committee
+  general_chair:
+    - name: Dr. Cherry Lyn Sta Romana
+      institution: Cebu Institute of Technology University
+  co_chairs:
+    - name: Prof. Kristine Mae M. Adlaon
+      institution: University of the Immaculate Conception
+    - name: Dr. Cenie M. Vilela-Malabanan
+      institution: Mindanao State University - Iligan Institute of Technology (MSU-IIT)
+  local_organizers:
+    - name: Prof. Cris John David Manero
+      institution: University of the Immaculate Conception
+    - name: Prof. Aurora Cristina Atilano-Manseras
+      institution: University of the Immaculate Conception
+
+- committee: Program Committee
+  general_chair:
+    - name: Dr. Angelique Lacasandile
+      institution: National University
+  co_chairs:
+    - name: Prof. Angie M. Ceniza-Canillo
+      institution: University of San Carlos
+    - name: Prof. Ma. Christine Gendrano
+      institution: De La Salle University
+
+- committee: Paper Review Committee
+  general_chair:
+    - name: Dr. Mideth Abisado
+      institution: National University
+  co_chairs:
+    - name: Dr. Lany Maceda
+      institution: Bicol University
+    - name: Prof. Julie Ann Salido
+      institution: Aklan State University

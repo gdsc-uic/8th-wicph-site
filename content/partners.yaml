@@ -1,0 +1,41 @@
+organizers:
+  - name: University of the Immaculate Conception
+    website: https://www.uic.edu.ph
+    icon: uic.png
+  - name: UIC College of Computer Studies
+    icon: ccs.png
+    website: https://www.facebook.com/uic.ccs/
+  - name: Mindanao Natural Language R & D Lab
+    website: https://www.facebook.com/minnalproc
+    icon: minna.png
+  - name: Google Developer Student Clubs - UIC
+    website: https://facebook.com/dscuic
+    icon: gdscuic.png
+
+co_organizers: 
+  - name: Aklan State University
+    website: https://asu.edu.ph/online/home/
+    icon: asu.png
+  - name: Bicol University
+    website: https://bicol-u.edu.ph/
+    icon: bu.png
+  - name: Cebu Institute of Technology University
+    website: https://cit.edu/
+    icon: cit.png
+  - name: De La Salle University
+    website: https://www.dlsu.edu.ph/
+    icon: dlsu.png
+  - name: Mindanao State University - Iligan Institute of Technology (MSU-IIT)
+    website: https://www.msuiit.edu.ph/
+    icon: msuiit.png
+  - name: National University
+    website: https://national-u.edu.ph/
+    icon: nu.png
+  - name: University of San Carlos
+    website: https://www.usc.edu.ph/
+    icon: usc.png
+
+supporters:
+  - name: Computing Society of the Philippines
+    website: https://csp.org.ph/
+    icon: csp.png
