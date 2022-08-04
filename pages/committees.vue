@@ -54,7 +54,7 @@ interface Programme extends ParsedContent {
 }
 
 const { data } = await useAsyncData(
-    'programme',
+    'committees',
     () => queryContent<Programme>('/committees').findOne()
 );
 
