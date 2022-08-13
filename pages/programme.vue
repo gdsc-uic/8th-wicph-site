@@ -1,34 +1,41 @@
 <template>
     <div>
         <NuxtLayout name="page" title="Programme">
-            <div class="container py-8">
-                <table class="w-full border">
-                    <thead class="border-b">
-                        <tr class="flex">
-                            <th class="w-1/5 p-2 border-r">Time</th>
-                            <th class="w-2/5 p-2 border-r">Program</th>
-                            <th class="w-2/5 p-2">Speakers</th>
-                        </tr>
-                    </thead>
-        
-                    <tbody>
-                        <template :key="`program_${pi}`" v-for="(p, pi) in data.body">
-                            <tr class="flex" :class="{ 'border-b': !p.sections || p.sections.length == 0 }">
-                                <td class="w-1/5 p-2 text-center border-r">{{ p.time }}</td>
-                                <td class="w-2/5 p-2 border-r">{{ p.program }}</td>
-                                <td class="w-2/5 p-2">{{ p.speakers?.join(', ') ?? '' }}</td>
-                            </tr>
-        
-                            <template v-if="p.sections">
-                                <tr class="flex" :class="{ 'border-b': spi == p.sections.length - 1 }" :key="`section_${spi}`" v-for="(sp, spi) in p.sections">
-                                    <td class="w-1/5 p-2 text-center border-r"></td>
-                                    <td class="w-2/5 p-2 border-r">{{ sp.time }} {{ sp.program }}</td>
-                                    <td class="w-2/5 p-2">{{ sp.speakers?.join(', ') ?? '' }}</td>
-                                </tr>
-                            </template>
-                        </template>
-                    </tbody>
-                </table>
+            <div class="container py-4 md:py-8">
+                <div class="flex">
+                    <div class="w-2/6 md:w-2/12 pr-2">
+                        <span class="font-bold text-lg">Time</span>
+                    </div>
+
+                    <div class="w-4/6 md:w-10/12 pl-2">
+                        <span class="font-bold text-lg">Program</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+                    <template :key="`program_${pi}`" v-for="(p, pi) in data.body">
+                        <div class="flex py-4" :class="{ 'border-t': pi > 0 }">
+                            <div class="w-2/6 md:w-2/12 pr-2">
+                                <span class="block text-xl md:text-2xl text-left font-semibold text-secondary-400">{{ p.time }}</span>
+                            </div>
+                            <div class="w-4/6 md:w-10/12 pl-2">
+                                <span class="text-xl font-semibold">{{ p.program }}</span>
+                                <!-- TODO: Speakers goes here -->
+                                <p v-if="p.speakers && p.speakers.length !== 0">{{ p.speakers?.join(', ') ?? '' }}</p>
+                            </div>
+                        </div>
+
+                        <div :key="`section_${pi}_${spi}`" v-for="(sp, spi) in p.sections" class="flex pb-4">
+                            <div class="w-2/6 md:w-2/12 pr-2">
+                                <span class="block text-xl text-left text-gray-600">{{ sp.time }}</span>
+                            </div>
+                            <div class="w-4/6 md:w-10/12 pl-2">
+                                <span class="text-lg">{{ sp.program }}</span>
+                                <p v-if="sp.speakers && sp.speakers.length !== 0">{{ sp.speakers?.join(', ') ?? '' }}</p>
+                            </div>
+                        </div>
+                    </template>
+                </div>
             </div>
         </NuxtLayout>
     </div>
