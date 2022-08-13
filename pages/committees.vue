@@ -7,14 +7,15 @@
 
             <template v-for="(label, key) in chairsKV" :key="`${c.committee}_${label}`">
               <template v-if="c[key]">
-                <div class="flex py-4">
-                  <div class="w-1/4 pt-2">
+                <div class="flex flex-col md:flex-row py-4">
+                  <div class="w-full md:w-1/4 pt-2">
                     <h3>{{ label }}</h3>
                   </div>
 
-                  <div class="flex-1 flex flex-row flex-wrap">
-                    <div v-for="(p, pi) in c[key]" :key="`${c.committee}_${label}_${pi}`" class="flex w-1/2 p-2">
-                      <div class="h-16 w-16 bg-gray-400 rounded-full"></div>
+                  <div class="flex-1 flex flex-wrap">
+                    <div v-for="(p, pi) in c[key]" :key="`${c.committee}_${label}_${pi}`" class="flex w-full md:w-1/2 md:px-2 py-2">
+                      <img v-if="p.image" :src="`/committee_images/${p.image}`" :alt="p.name" class="h-16 w-16 object-cover object-center rounded-full bg-primary-400" />
+                      <div v-else class="h-16 w-16 bg-gray-200 rounded-full"></div>
                       <div class="flex-1 pl-2 flex flex-col justify-center">
                         <h3 class="font-semibold">{{ p.name }}</h3>
                         <p class="text-gray-500 text-sm">{{ p.institution }}</p>
@@ -40,6 +41,7 @@ definePageMeta({
 interface Person {
     name: string
     institution: string
+    image?: string
 }
 
 interface Committee {
