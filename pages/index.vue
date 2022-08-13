@@ -35,24 +35,24 @@
 	</div>
 
 	<div class="bg1 py-16">
-		<div class="bg-secondary-400 py-8 container prose prose-xl">
-			<h2 class="!text-primary-400">Important Dates</h2>
+		<div class="bg-secondary-400 py-8 container">
+			<h2 class="!text-primary-400 <md:text-center text-3xl font-bold <md:underline mb-8">Important Dates</h2>
 
-			<div class="not-prose flex flex-col space-y-3 text-2xl">
-				<div class="flex text-white space-x-4">
-					<p style="max-width: 25%" class="w-full text-primary-400 font-bold">September 9, 2022</p>
+			<div class="not-prose flex flex-col space-y-3 text-2xl <md:text-center">
+				<div class="flex flex-col md:flex-row text-white md:space-x-4">
+					<p class="md:max-w-1/4 w-full text-primary-400 font-bold">September 9, 2022</p>
 					<p class="flex-1">Abstract Submission Deadline</p>
 				</div>
-				<div class="flex text-white space-x-4">
-					<p style="max-width: 25%" class="w-full text-primary-400 font-bold">October 9, 2022</p>
+				<div class="flex flex-col md:flex-row text-white md:space-x-4">
+					<p class="md:max-w-1/4 w-full text-primary-400 font-bold">October 9, 2022</p>
 					<p class="flex-1">Notification of acceptance</p>
 				</div>
-				<div class="flex text-white space-x-4">
-					<p style="max-width: 25%" class="w-full text-primary-400 font-bold">October 15, 2022</p>
+				<div class="flex flex-col md:flex-row text-white md:space-x-4">
+					<p class="md:max-w-1/4 w-full text-primary-400 font-bold">October 15, 2022</p>
 					<p class="flex-1">Deadline for submission of revised abstract</p>
 				</div>
-				<div class="flex text-white space-x-4">
-					<p style="max-width: 25%" class="w-full text-primary-400 font-bold">October 28, 2022</p>
+				<div class="flex flex-col md:flex-row text-white md:space-x-4">
+					<p class="md:max-w-1/4 w-full text-primary-400 font-bold">October 28, 2022</p>
 					<p class="flex-1">ACM WiC-Ph Conference</p>
 				</div>
 			</div>
