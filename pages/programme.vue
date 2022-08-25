@@ -4,7 +4,7 @@
             <div class="container py-4 md:py-8">
                 <div class="flex">
                     <div class="w-2/6 md:w-2/12 pr-2">
-                        <span class="font-bold text-lg">Time</span>
+                        <span class="block font-bold md:text-right text-lg">Time</span>
                     </div>
 
                     <div class="w-4/6 md:w-10/12 pl-2">
@@ -16,7 +16,7 @@
                     <template :key="`program_${pi}`" v-for="(p, pi) in data.body">
                         <div class="flex py-4" :class="{ 'border-t': pi > 0 }">
                             <div class="w-2/6 md:w-2/12 pr-2">
-                                <span class="block text-xl md:text-2xl text-left font-semibold text-secondary-400">{{ p.time }}</span>
+                                <span class="block text-xl md:text-2xl md:text-right font-semibold text-secondary-700">{{ p.time }}</span>
                             </div>
                             <div class="w-4/6 md:w-10/12 pl-2">
                                 <span class="text-xl font-semibold">{{ p.program }}</span>
@@ -27,7 +27,7 @@
 
                         <div :key="`section_${pi}_${spi}`" v-for="(sp, spi) in p.sections" class="flex pb-4">
                             <div class="w-2/6 md:w-2/12 pr-2">
-                                <span class="block text-xl text-left text-gray-600">{{ sp.time }}</span>
+                                <span class="block text-xl md:text-right text-gray-600">{{ sp.time }}</span>
                             </div>
                             <div class="w-4/6 md:w-10/12 pl-2">
                                 <span class="text-lg">{{ sp.program }}</span>
