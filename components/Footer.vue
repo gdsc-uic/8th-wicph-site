@@ -12,7 +12,7 @@
             </section>
         </div>
 
-        <p class="text-center max-w-[30rem] mx-auto">Copyright &copy; 2022 Women in Computing - Computer Society of the Philippines Special Interest Group</p>
+        <p class="text-center max-w-[30rem] mx-auto">Copyright &copy; 2022 Women in Computing - Computing Society of the Philippines Special Interest Group</p>
     </footer>
 </template>
 
