@@ -1,5 +1,5 @@
 <template>
-    <Header />
+    <DefaultHeader />
     <main>
         <div v-if="title" class="header-bg">
             <div class="container py-8">

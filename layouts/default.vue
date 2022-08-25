@@ -1,5 +1,5 @@
 <template>
-    <Header />
+    <DefaultHeader />
     <main>
         <slot />
     </main>
