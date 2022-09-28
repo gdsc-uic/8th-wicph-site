@@ -31,11 +31,11 @@
 		<article class="w-full md:w-2/3 py-12 <md:px-4 md:pr-8">
 			<h1 class="font-bold text-6xl text-secondary-800 mb-4">Themes</h1>
 			<p class="text-gray-900 text-xl mb-8">The CSP SIG WIC calls for the submission of extended abstracts about the celebration theme and sub-themes of:</p>
-			<div class="flex rounded-lg bg-gray-100 hover:bg-gray-200 px-4 py-4 my-3 text-xl" v-for="(theme, idx) of themes">
-				<div class="bg-secondary-800 text-white font-bold self-start h-8 w-8 rounded-full inline-flex mr-4 items-center justify-center">
+			<div class="group transition-colors hover:bg-secondary-800 hover:text-white flex rounded-lg bg-gray-100 px-4 py-4 my-3 text-xl" v-for="(theme, idx) of themes">
+				<div class="bg-secondary-800 group-hover:bg-primary-400 group-hover:text-secondary-800 text-white font-bold self-start h-8 w-8 rounded-full inline-flex mr-4 items-center justify-center">
 					<p>{{ idx+1 }}</p>
 				</div>
-				<p class="text-gray-900 flex-1 mt-0.5">{{ theme }}</p>
+				<p class="text-gray-900 group-hover:text-white flex-1 mt-0.5">{{ theme }}</p>
 			</div>
 		</article>
 		<section class="<md:hidden w-1/3 h-[50vh] rounded-b-lg bg2"></section>
