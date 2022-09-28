@@ -46,15 +46,15 @@
 			<h3 class="text-center text-4xl leading-normal text-white bg-secondary-900 rounded-full self-center px-8 font-bold">Important Dates</h3>
 			<div class="not-prose flex flex-col md:flex-row <md:space-y-3 text-2xl <md:text-center -mx-2 pt-8">
 				<div class="md:w-1/4 flex flex-col text-white p-2">
-					<p class="text-primary-400 font-bold text-3xl">September 9, <br class="<md:hidden" />2022</p>
+					<p class="text-primary-400 font-bold text-3xl">October 5, <br class="<md:hidden" />2022</p>
 					<p class="text-lg">Abstract Submission Deadline</p>
 				</div>
 				<div class="md:w-1/4 flex flex-col text-white p-2">
-					<p class="text-primary-400 font-bold text-3xl">October 9, <br class="<md:hidden" />2022</p>
+					<p class="text-primary-400 font-bold text-3xl">October 15, <br class="<md:hidden" />2022</p>
 					<p class="text-lg">Notification of acceptance</p>
 				</div>
 				<div class="md:w-1/4 flex flex-col text-white p-2">
-					<p class="text-primary-400 font-bold text-3xl">October 15, <br class="<md:hidden" />2022</p>
+					<p class="text-primary-400 font-bold text-3xl">October 20, <br class="<md:hidden" />2022</p>
 					<p class="text-lg">Deadline for submission of revised abstract</p>
 				</div>
 				<div class="md:w-1/4 flex flex-col text-white p-2">
