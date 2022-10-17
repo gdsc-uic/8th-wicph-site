@@ -53,4 +53,12 @@ const { data } = await useAsyncData('submission', () => queryContent('/submissio
 .submission-content :not(h2) a {
     @apply underline text-secondary-800;
 }
+
+.submission-content strong {
+    @apply font-bold text-black;
+}
+
+.submission-content ul {
+    @apply pl-0;
+}
 </style>
