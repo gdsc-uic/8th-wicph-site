@@ -5,7 +5,7 @@ import colors from 'windicss/colors'
 export default defineConfig({
     theme: {
         fontFamily: {
-            sans: ['"Work Sans"', ...config.theme.fontFamily.sans]
+            sans: ['"Outfit"', ...config.theme.fontFamily.sans]
         },
         colors: {
             white: colors.white,

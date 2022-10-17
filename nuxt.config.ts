@@ -19,7 +19,7 @@ export default defineNuxtConfig({
     },
     googleFonts: {
         families: {
-            'Work Sans': [300, 400, 600, 700],
+            'Outfit': [300, 400, 600, 700],
         },
         display: 'swap',
         download: false
