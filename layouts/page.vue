@@ -18,9 +18,11 @@
 </template>
 
 <script setup>
-defineProps({
+const { title } = defineProps({
     title: String
-})
+});
+
+useHead({ title });
 </script>
 
 <style lang="postcss" scoped>
