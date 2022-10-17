@@ -1,40 +1,42 @@
 <template>
     <div>
         <NuxtLayout name="page" title="Programme">
-            <div class="container py-4 md:py-8">
+            <div class="container">
                 <div class="flex">
-                    <div class="w-2/6 md:w-2/12 pr-2">
-                        <span class="block font-bold md:text-right text-lg">Time</span>
+                    <div class="hidden md:w-2/12 pr-2">
+                        <span class="block font-bold md:text-left md:pl-7 text-lg">Time</span>
                     </div>
 
-                    <div class="w-4/6 md:w-10/12 pl-2">
+                    <div class="hidden md:w-10/12 pl-2">
                         <span class="font-bold text-lg">Program</span>
+                    </div>
+
+                    <div class="w-full md:hidden">
+                        <span class="font-bold text-lg">Time / Program</span>
                     </div>
                 </div>
 
                 <div class="flex flex-col">
-                    <template :key="`program_${pi}`" v-for="(p, pi) in data.body">
-                        <div class="flex py-4" :class="{ 'border-t': pi > 0 }">
-                            <div class="w-2/6 md:w-2/12 pr-2">
-                                <span class="block text-xl md:text-2xl md:text-right font-semibold text-secondary-700">{{ p.time }}</span>
-                            </div>
-                            <div class="w-4/6 md:w-10/12 pl-2">
-                                <span class="text-xl font-semibold">{{ p.program }}</span>
-                                <!-- TODO: Speakers goes here -->
-                                <p v-if="p.speakers && p.speakers.length !== 0">{{ p.speakers?.join(', ') ?? '' }}</p>
-                            </div>
+                    <div 
+                        :key="`program_${pi}`" v-for="(p, pi) in data.body" class="flex flex-col md:flex-row" 
+                        :class="{ 'border-t': pi > 0 }">
+                        <div class="w-full <md:border-l md:w-2/12 <md:pl-5 md:pr-5 bg-gradient-to-b from-white via-white to-transparent <md:py-2 md:py-4 <md:sticky <md:top-0">
+                            <span class="block text-2xl md:text-2xl md:text-right font-semibold text-secondary-700">{{ p.time }}</span>
                         </div>
+                        <div class="w-full md:w-10/12 pb-4 md:pl-2 md:py-4 flex flex-col space-y-4 border-l">
+                            <div v-for="program in p.programs">
+                                <div class="flex items-center -ml-1.5 md:-ml-3.5">
+                                    <div class="h-3 w-3 bg-gray-400 rounded-full mr-4"></div>
+                                    <span class="text-xl font-semibold">{{ program.name }}</span>
+                                </div>
 
-                        <div :key="`section_${pi}_${spi}`" v-for="(sp, spi) in p.sections" class="flex pb-4">
-                            <div class="w-2/6 md:w-2/12 pr-2">
-                                <span class="block text-xl md:text-right text-gray-600">{{ sp.time }}</span>
-                            </div>
-                            <div class="w-4/6 md:w-10/12 pl-2">
-                                <span class="text-lg">{{ sp.program }}</span>
-                                <p v-if="sp.speakers && sp.speakers.length !== 0">{{ sp.speakers?.join(', ') ?? '' }}</p>
+                                <div v-if="program.speaker" class="flex flex-col pl-5 md:pl-3.5">
+                                    <p>{{ program.speaker.name }}</p>
+                                    <p v-for="pos in program.speaker.positions" class="text-gray-700">{{ pos }}</p>
+                                </div>
                             </div>
                         </div>
-                    </template>
+                    </div>
                 </div>
             </div>
         </NuxtLayout>
@@ -48,19 +50,27 @@ definePageMeta({
     layout: false
 });
 
-interface ProgramInfo {
-    time: string
-    program: string
-    speakers?: string[]
-    sections?: ProgramInfo[]
+interface ScheduleList extends ParsedContent {
+    body: Schedule[]
 }
 
-interface Programme extends ParsedContent {
-    body: ProgramInfo[]
+interface Schedule {
+    time: string
+    programs: Program[]
+}
+
+interface Program {
+    name: string
+    speaker?: ProgramSpeaker
+}
+
+interface ProgramSpeaker {
+    name: string
+    positions: string[]
 }
 
 const { data } = await useAsyncData(
     'programme', 
-    () => queryContent<Programme>('/programme').findOne()
+    () => queryContent<ScheduleList>('/programme').findOne()
 );
 </script>

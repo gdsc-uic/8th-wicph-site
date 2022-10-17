@@ -1,47 +1,52 @@
-- time: 8:30 - 9:00
-  program: Registrations
-  speakers: []
 - time: 9:00 - 9:15
-  program: Opening Ceremonies
-  speakers: []
+  programs: 
+    - name: Opening Ceremonies
+    - name: Opening Prayer
+    - name: National Anthem
+    - name: Welcome Remarks
+      speaker:
+        name: Dr. Cherry Lyn Sta. Romana
+        positions:
+          - President, CSP SIG Women in Computing
+          - Dean, College of Computer Studies - Cebu Institute of Technology University
+    - name: Overview of the Conference
+      speaker:
+        name: Asst. Prof. Kristine Mae M. Adlaon
+        positions:
+          - Local Chair, Women in Computing Celebration 2022
+          - Head, Mindanao Natural Language Procesing R&D Lab - University of the Immaculate Conception
 - time: 9:15 - 10:15
-  program: Keynote 1
-  speakers: []
+  programs:
+    - name: Keynote
+      speaker:
+        name: Jocelle Batapa Sigue
+        positions:
+          - Undersecretary, Department of Information and Communications Technology (DICT)
 - time: 10:15 - 11:15
-  program: Invited Speaker
-  speakers: []
-- time: 11:15 - 12:15
-  program: Paper Presentation
-  sections:
-    - time: 11:15 - 11:30
-      program: Paper 1
-    - time: 11:30 - 11:45
-      program: Paper 2
-    - time: 11:45 - 12:00
-      program: Paper 3
-    - time: 12:00 - 12:15
-      program: Q and A
-- time: 12:15 - 1:30
-  program: Lunch Break
-  speakers: []
-- time: 1:30 - 2:30
-  program: Paper Presentation
-  sections:
-    - time: 1:30 - 1:45
-      program: Paper 4
-    - time: 1:45 - 2:00
-      program: Paper 5
-    - time: 2:00 - 2:15
-      program: Paper 6
-    - time: 2:15 - 2:30
-      program: Q and A
+  programs:
+    - name: Keynote
+      speaker:
+        name: Renee Rose Santos
+        positions:
+          - Technology Delivery SME Associate Director, Accenture
+- time: 11:15 - 12:30
+  programs:
+    - name: Lunch Break
+- time: 12:30 - 2:30
+  programs:
+  - name: Invited Talk
+    speaker:
+      name: Dr. Shu-Chen Cheng
+      positions:
+        - Southern Taiwan University of Science and Technology
 - time: 2:30 - 3:30
-  program: Keynote 2
-  speakers: []
+  programs:
+  - name: Invited Talk
+    speaker:
+      name: Gyle dela Cruz
+      positions:
+        - Senior Consultant-Cyber Security, IAG
 - time: 3:30 - 4:30
-  program: Invited Speaker
-  speakers: []
-- time: 4:30 - 5:00
-  program: Awarding
-- time: 5:00 - 5:15
-  program: Closing Ceremonies
+  programs:
+  - name: Closing Ceremonies
+  - name: Closing Prayer
