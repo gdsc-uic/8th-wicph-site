@@ -1,4 +1,4 @@
-- time: 9:00 - 9:15
+- time: 9:00am
   programs: 
     - name: Opening Ceremonies
     - name: Opening Prayer
@@ -15,38 +15,41 @@
         positions:
           - Local Chair, Women in Computing Celebration 2022
           - Head, Mindanao Natural Language Procesing R&D Lab - University of the Immaculate Conception
-- time: 9:15 - 10:15
+- time: 9:15am
   programs:
     - name: Keynote
       speaker:
         name: Jocelle Batapa Sigue
         positions:
           - Undersecretary, Department of Information and Communications Technology (DICT)
-- time: 10:15 - 11:15
+- time: 10:15am
   programs:
     - name: Keynote
       speaker:
         name: Renee Rose Santos
         positions:
           - Technology Delivery SME Associate Director, Accenture
-- time: 11:15 - 12:30
+- time: 11:15am
   programs:
     - name: Lunch Break
-- time: 12:30 - 2:30
+- time: 12:30pm
+  programs:
+    - name: Paper Presentations
+- time: 2:30pm
   programs:
   - name: Invited Talk
     speaker:
       name: Dr. Shu-Chen Cheng
       positions:
         - Southern Taiwan University of Science and Technology
-- time: 2:30 - 3:30
+- time: 3:30pm
   programs:
   - name: Invited Talk
     speaker:
       name: Gyle dela Cruz
       positions:
         - Senior Consultant-Cyber Security, IAG
-- time: 3:30 - 4:30
+- time: 4:30pm
   programs:
   - name: Closing Ceremonies
   - name: Closing Prayer
