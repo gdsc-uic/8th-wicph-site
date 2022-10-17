@@ -21,8 +21,28 @@
     <Teleport to="body">
         <Transition name="nav" @enter="menuTransition" @leave="menuTransition">
             <div v-if="isMenuOpen" class="h-screen w-screen fixed top-0 z-50">
-                <div class="mobile-nav pt-32 pr-8 z-10 bg-white fixed h-full flex flex-col w-[90%] shadow-lg">
-                    <slot />
+                <div class="mobile-nav pt-4 z-10 bg-secondary-800 fixed h-full flex flex-col w-[90%] md:w-md shadow-lg">
+                    <div class="text-white px-4 pb-8 flex flex-col">
+                        <button @click="isMenuOpen = false" class="self-end text-white bg-secondary-900 rounded-full flex items-center space-x-1 px-4 py-2">
+                            <span>Close</span>
+                            <svg class="w-6 h-6" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6Z"/>
+                            </svg>
+                        </button>
+
+                        <div class="py-4 flex flex-col md:mx-auto">
+                            <span class="block text-6xl">WiCPH<b class="font-bold text-primary-400">2022</b></span>
+                            <span class="block text-xl w-3/4">8th ACM Women in Computing Philippine Celebration</span>
+                        </div>
+
+                        <span class="pr-8">
+                            Bringing together women from academia, industry, and government to freely share their ideas and opinions on the emerging technologies and issues in Computer Science, Information Technology, and Information Systems.
+                        </span>
+                    </div>
+
+                    <div class="nav-menu-link-list flex flex-col pr-8">
+                        <slot />
+                    </div>
                 </div>
 
                 <div @click.self="isMenuOpen = false" class="block bg-overlay opacity-30 bg-black z-0 h-full w-full absolute inset-0"></div>
@@ -88,15 +108,15 @@ const menuTransition = (_, done) => setTimeout(done, 500)
     @apply pb-4;
 }
 
-.mobile-nav :slotted(.router-link-exact-active) {
-    @apply font-bold text-secondary-800 bg-primary-400 hover:bg-primary-500;
+.mobile-nav > .nav-menu-link-list :slotted(.router-link-exact-active) {
+    @apply font-bold text-white bg-gradient-to-tr from-primary-500 to-primary-300 hover:bg-primary-500;
 }
 
-.mobile-nav :slotted(a) {
+.mobile-nav > .nav-menu-link-list :slotted(a) {
     @apply p-4 text-2xl rounded-r-lg;
 }
 
-.mobile-nav :slotted(a:not(.router-link-exact-active)) {
-    @apply font-bold hover:bg-gray-200;
+.mobile-nav > .nav-menu-link-list :slotted(a:not(.router-link-exact-active)) {
+    @apply text-white hover:bg-secondary-900;
 }
 </style>
