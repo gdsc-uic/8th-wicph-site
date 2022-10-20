@@ -31,10 +31,40 @@
           - Technology Delivery SME Associate Director, Accenture
 - time: 11:15am
   programs:
-    - name: Lunch Break
-- time: 12:30pm
+    - name: Paper Presentation
+      speaker:
+        name: Cebu Institute of Technology University
+- time: 11:35am
   programs:
-    - name: Paper Presentations
+    - name: Paper Presentation
+      speaker:
+        name: University of the Immaculate Conception
+- time: 11:55am
+  programs:
+    - name: Q and A
+- time: 12:05pm
+  programs:
+    - name: Lunch Break
+- time: 1:00pm
+  programs:
+    - name: Invited Talk
+      speaker: 
+        name: Candy Espulgar
+        positions:
+          - Teaching Associate, De La Salle University
+- time: 1:40pm
+  programs:
+    - name: Paper Presentation
+      speaker: 
+        name: Bicol University
+- time: 2:00pm
+  programs:
+    - name: Paper Presentation
+      speaker:
+        name: Western Mindanao State University
+- time: 2:20pm
+  programs:
+    - name: Q and A
 - time: 2:30pm
   programs:
   - name: Invited Talk
