@@ -19,14 +19,14 @@
   programs:
     - name: Keynote
       speaker:
-        name: Jocelle Batapa Sigue
+        name: Atty. Jocelle Batapa-Sigue
         positions:
-          - Undersecretary, Department of Information and Communications Technology (DICT)
+          - Undersecretary for ICT Development, Department of Information and Communications Technology (DICT)
 - time: 10:15am
   programs:
     - name: Keynote
       speaker:
-        name: Renee Rose Santos
+        name: Ms. Renee Rose Santos
         positions:
           - Technology Delivery SME Associate Director, Accenture
 - time: 11:15am
@@ -49,7 +49,7 @@
   programs:
     - name: Invited Talk
       speaker: 
-        name: Candy Espulgar
+        name: Ms. Candy Espulgar
         positions:
           - Teaching Associate, De La Salle University
 - time: 1:40pm
@@ -76,7 +76,7 @@
   programs:
   - name: Invited Talk
     speaker:
-      name: Gyle dela Cruz
+      name: Ms. Gyle dela Cruz
       positions:
         - Senior Consultant-Cyber Security, IAG
 - time: 4:30pm
